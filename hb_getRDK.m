@@ -21,9 +21,10 @@ function [RDKcoordinates,dots] = hb_getRDK( dots )
 % %     axis xy;
 % %     drawnow;
 % % end
-% Written by Hio-Been Han, hiobeen.han@seoutech.ac.kr, 2016-08-01
+% Written by Hio-Been Han, hiobeen.han@seoultech.ac.kr, Written in 2016-08-01, Newly uploaded 2024-08-07
 % Simple alternative for VCRDM Toolbox from Shadlen Lab (www.shadlenlab.columbia.edu) 
-% ½¦µé·» ÄÚµå°¡ ±¸·Á¼­ Á÷Á¢ ¸¸µé¾úÀ½
+% ì‰ë“¤ë Œ ì½”ë“œê°€ êµ¬ë ¤ì„œ ì§ì ‘ ë§Œë“¤ì—ˆìŒ
+% Visit Hio-Been Han's website: https://cogneuro.seoultech.ac.kr
 
 warning off;
 if nargin < 1
@@ -136,7 +137,7 @@ for frameIdx = 2:nFrames
                 XY = dots.dotFrames(frameIdx-1).dotInfo(dotIdx).XY+ [dx, dy];
             end
             
-            try % Æ®¶óÀÌÄ³Ä¡ ³ªÁß¿¡ ¹Ù²Ù±â
+            try % íŠ¸ë¼ì´ìºì¹˜ ë‚˜ì¤‘ì— ë°”ê¾¸ê¸°
                 inCircle = dots.circField.oval(round(XY(1)+(dots.circField.size(1)*.5)),round(XY(2)+(dots.circField.size(2)*.5)));
             catch
                 inCircle = false;
