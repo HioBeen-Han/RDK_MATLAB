@@ -25,6 +25,9 @@ function [RDKcoordinates,dots] = hb_getRDK( dots )
 % Simple alternative for VCRDM Toolbox from Shadlen Lab (www.shadlenlab.columbia.edu) 
 % 쉐들렌 코드가 구려서 직접 만들었음
 % Visit Hio-Been Han's website: https://brainrhythm.seoultech.ac.kr
+%
+% Demo Video: https://www.youtube.com/watch?v=_q680_1_wKM
+% 
 
 warning off;
 if nargin < 1
